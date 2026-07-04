@@ -29,7 +29,7 @@ cd ..                # Move up one directory level
 
 mkdir red-team-lab                   # Create a new directory named 'red-team-lab'
 touch scan.txt          # Create a new empty file named 'scan.txt'
-cp source.txt dest.txt  # Copy a file. Use -r to copy directories
+cp source.txt dest.txt  # Copy a file. User to copy directories
 mv old.txt new.txt      # Move or rename a file or directory
 rm file.txt             # Delete a file. This is permanent.
 rm -r directory       # Recursively delete a directory and all its contents
@@ -44,4 +44,21 @@ tail -f /var/log/auth.log   # Display the last 10 lines and follow updates live
 less /var/log/syslog        # View large files with scrolling. Press 'q' to quit
 grep "Failed" auth.log      # Search for the word "Failed" inside auth.log
 ```
+
+#### 5. Search Commands
+`find`: Search for files in a directory hierarchy.
+`locate`: Quickly search for files by name.
+`grep [pattern] [file]`: Search for specific text inside files.
+
+#### 6. User & Permission Management
+`chmod [permissions] [file]`: Change file access permissions.
+`chown [user] [file]`: Change file owner.
+`useradd` / `usermod` / `passwd`: User account management.
+`sudo`: Execute commands with root privileges.
+
+#### 7. System & Process Management
+`ps` / `top` / `htop`: View running processes.
+`kill [PID]`: Terminate a process.
+`free`: Check memory usage.
+`df` / `du`: Check disk space usage.
 
